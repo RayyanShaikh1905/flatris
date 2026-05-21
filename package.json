@@ -18,7 +18,7 @@
     "dev:server": "babel-node server/start-dev-server.js",
     "dev:server:watch": "nodemon server/start-dev-server.js  --exec babel-node",
     "build": "next build web",
-    "start": "babel-node server/start-prod.js"
+    "start": "HOST=0.0.0.0 babel-node server/start-prod.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
